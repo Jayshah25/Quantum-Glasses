@@ -15,3 +15,8 @@ How the Visualizer looks?
 ![image](https://user-images.githubusercontent.com/47387734/127348008-106532d8-e050-4a6d-9dfc-e349e1f6cc6c.png)
 
 
+References:
+
+1. [Logo](https://icons8.com/icons/set/3d)
+2. Tkinter Documentation
+3. [Qiskit Documentation](https://qiskit.org/documentation/)
