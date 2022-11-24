@@ -15,7 +15,9 @@ How the Visualizer looks?
 ![image](https://user-images.githubusercontent.com/47387734/127348008-106532d8-e050-4a6d-9dfc-e349e1f6cc6c.png)
 
 
-Learn to build the software from scratch using this [video](https://youtu.be/wCrdbL5taj0)
+Learn to build the software from scratch using this video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wCrdbL5taj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 References:
 
