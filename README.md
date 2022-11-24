@@ -15,6 +15,8 @@ How the Visualizer looks?
 ![image](https://user-images.githubusercontent.com/47387734/127348008-106532d8-e050-4a6d-9dfc-e349e1f6cc6c.png)
 
 
+Learn to build the software from scratch using this [video](https://youtu.be/wCrdbL5taj0)
+
 References:
 
 1. [Logo](https://icons8.com/icons/set/3d)
