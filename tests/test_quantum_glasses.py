@@ -1,4 +1,7 @@
 import quantum_glasses
+import unittest
 
-def test_main():
-    assert quantum_glasses.main()==True
+class TestQuantumGlasses(unittest.TestCase):
+
+    def test_main(self):
+        self.assertEqual(quantum_glasses.main(),True)
