@@ -1,0 +1,32 @@
+Collecting qiskit
+  Using cached qiskit-0.44.0-py3-none-any.whl
+Collecting qiskit-terra==0.25.0
+  Using cached qiskit_terra-0.25.0-cp38-abi3-win_amd64.whl (5.1 MB)
+Collecting psutil>=5
+  Using cached psutil-5.9.5-cp36-abi3-win_amd64.whl (255 kB)
+Collecting stevedore>=3.0.0
+  Using cached stevedore-5.1.0-py3-none-any.whl (49 kB)
+Collecting ply>=3.10
+  Using cached ply-3.11-py2.py3-none-any.whl (49 kB)
+Collecting scipy>=1.5
+  Using cached scipy-1.11.1-cp310-cp310-win_amd64.whl (44.0 MB)
+Collecting sympy>=1.3
+  Using cached sympy-1.12-py3-none-any.whl (5.7 MB)
+Collecting numpy>=1.17
+  Using cached numpy-1.25.2-cp310-cp310-win_amd64.whl (15.6 MB)
+Collecting dill>=0.3
+  Using cached dill-0.3.7-py3-none-any.whl (115 kB)
+Collecting typing-extensions
+  Using cached typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Collecting python-dateutil>=2.8.0
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting rustworkx>=0.13.0
+  Using cached rustworkx-0.13.1-cp310-cp310-win_amd64.whl (1.4 MB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pbr!=2.1.0,>=2.0.0
+  Using cached pbr-5.11.1-py2.py3-none-any.whl (112 kB)
+Collecting mpmath>=0.19
+  Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Installing collected packages: ply, mpmath, typing-extensions, sympy, six, psutil, pbr, numpy, dill, stevedore, scipy, rustworkx, python-dateutil, qiskit-terra, qiskit
+Successfully installed dill-0.3.7 mpmath-1.3.0 numpy-1.25.2 pbr-5.11.1 ply-3.11 psutil-5.9.5 python-dateutil-2.8.2 qiskit-0.44.0 qiskit-terra-0.25.0 rustworkx-0.13.1 scipy-1.11.1 six-1.16.0 stevedore-5.1.0 sympy-1.12 typing-extensions-4.7.1
