@@ -5,4 +5,4 @@ class TestQuantumGlasses(unittest.TestCase):
 
     def test_main(self):
         my_qglases = QuantumGlasses()
-        self.assertEqual(my_qglases.main(), True)
+        self.assertEqual(my_qglases.main(testing=True), True)

@@ -1,3 +1,5 @@
+import os
+from platform import system
 import tkinter
 from tkinter import LEFT, END, DISABLED, NORMAL
 import warnings
@@ -14,7 +16,7 @@ warnings.simplefilter("ignore")
 # root.title('Quantum Glasses')
 
 # # set the icon
-# root.iconbitmap(default='logo.ico')
+# root.iconbitmap(default='../logo.ico')
 # root.geometry('399x410')
 # root.resizable(0,0) # Blocking the resizing feature
 
@@ -25,6 +27,16 @@ special_buttons = '#bc3454'
 button_font = ('Arial', 18)
 display_font = ('Arial', 32)
 
+# Initialize the Quantum Circuit
+def initialize_circuit():
+    global circuit
+    circuit = QuantumCircuit(1)
+
+initialize_circuit()
+
+theta = 0
+
+# Define Functions
 
 class QuantumGlasses:
     """Main object."""
@@ -32,18 +44,6 @@ class QuantumGlasses:
     def __init__(self):
         pass
 
-    # Initialize the Quantum Circuit
-    @staticmethod
-    def initialize_circuit():
-        global circuit
-        circuit = QuantumCircuit(1)
-
-    initialize_circuit()
-
-
-    theta = 0
-
-    # Define Functions
 
     @staticmethod
     def about():
@@ -180,7 +180,7 @@ class QuantumGlasses:
         except qiskit.visualization.exceptions.VisualizationError:
             window.destroy()
 
-    def main(self):
+    def main(self, testing: bool = False):
         '''
         Args: -
         Returns:
@@ -193,7 +193,11 @@ class QuantumGlasses:
             root.title('Quantum Glasses')
 
             # set the icon
-            root.iconbitmap(default='logo.ico')
+            current_directory = os.path.dirname(os.path.abspath(__file__))
+            if system() == 'Windows':
+                logo_path = os.path.join(current_directory, "../logo.ico")
+                root.iconbitmap(default=logo_path)
+
             root.geometry('399x410')
             root.resizable(0,0) # Blocking the resizing feature
 
@@ -270,7 +274,7 @@ class QuantumGlasses:
                 display.delete(0, END)
 
                 # reset the circuit to initial state |0>
-                self.initialize_circuit()
+                initialize_circuit()
 
                 # Checks if the buttons are disabled and if so, enables them
                 if x_gate['state']==DISABLED:
@@ -293,7 +297,10 @@ class QuantumGlasses:
             about_button.grid(row=6,column=0,columnspan=3,sticky='WE')
 
             # Run the main loop
-            root.mainloop()
+            if testing:
+                root.dooneevent()
+            else:
+                root.mainloop()
 
             return True
         except Exception as e:
