@@ -1,4 +1,5 @@
 import os
+import matplotlib
 from platform import system
 import tkinter
 from tkinter import LEFT, END, DISABLED, NORMAL
@@ -9,8 +10,8 @@ from qiskit import QuantumCircuit
 from qiskit.visualization import visualize_transition
 
 
-import matplotlib
 matplotlib.use('Agg')
+os.environ["DISPLAY"] = "0.0"
 
 # Ignore unnecessary warnings
 warnings.simplefilter("ignore")
