@@ -10,8 +10,10 @@ from qiskit import QuantumCircuit
 from qiskit.visualization import visualize_transition
 
 
-matplotlib.use('Agg')
-os.environ["DISPLAY"] = "0.0"
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    matplotlib.use('Agg')
+    os.environ.__setitem__('DISPLAY', ':0.0')
 
 # Ignore unnecessary warnings
 warnings.simplefilter("ignore")
