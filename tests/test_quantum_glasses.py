@@ -12,5 +12,5 @@ class TestQuantumGlasses(unittest.TestCase):
             os.environ.__setitem__('DISPLAY', ':0.0')
             with self.assertRaises(Exception):
                 my_qglases.main(testing=True)
-
-        self.assertEqual(my_qglases.main(testing=True), True)
+        else:
+            self.assertEqual(my_qglases.main(testing=True), True)
