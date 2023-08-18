@@ -303,6 +303,5 @@ class QuantumGlasses:
                 root.mainloop()
 
             return True
-        except Exception as e:
-            print(f"Exception occured: {e}")
-            return False
+        except Exception as get_exception:
+            raise Exception from get_exception
