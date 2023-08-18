@@ -11,9 +11,14 @@ Built using: Python, Tkinter, Qiskit
 
 ### Launch
 
-To launch just run :
-```python
+To launch the app just run :
+```bash
 python quantum_glasses.py
+```
+
+To launch unittests just run :
+```bash
+tox -epy39
 ```
 
 How the Visualizer looks?
