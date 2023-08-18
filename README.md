@@ -9,6 +9,13 @@ Points to remember while recreating
 
 Built using: Python, Tkinter, Qiskit
 
+### Launch
+
+To launch just run :
+```python
+python quantum_glasses.py
+```
+
 How the Visualizer looks?
 
 

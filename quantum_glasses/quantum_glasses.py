@@ -8,6 +8,10 @@ import qiskit
 from qiskit import QuantumCircuit
 from qiskit.visualization import visualize_transition
 
+
+import matplotlib
+matplotlib.use('Agg')
+
 # Ignore unnecessary warnings
 warnings.simplefilter("ignore")
 
