@@ -1,5 +1,4 @@
 import os
-import matplotlib
 from platform import system
 import tkinter
 from tkinter import LEFT, END, DISABLED, NORMAL
@@ -8,12 +7,6 @@ import numpy as np
 import qiskit
 from qiskit import QuantumCircuit
 from qiskit.visualization import visualize_transition
-
-
-if os.environ.get('DISPLAY','') == '':
-    print('no display found. Using non-interactive Agg backend')
-    matplotlib.use('Agg')
-    os.environ.__setitem__('DISPLAY', ':0.0')
 
 # Ignore unnecessary warnings
 warnings.simplefilter("ignore")
@@ -305,7 +298,11 @@ class QuantumGlasses:
 
             # Run the main loop
             if testing:
-                root.dooneevent()
+                if os.getenv('DISPLAY') is None:
+                    print("No X server available !")
+                    root.event_info()
+                else:
+                    root.dooneevent()
             else:
                 root.mainloop()
 
