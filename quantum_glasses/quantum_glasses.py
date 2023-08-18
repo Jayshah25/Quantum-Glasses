@@ -298,16 +298,11 @@ class QuantumGlasses:
 
             # Run the main loop
             if testing:
-                if os.getenv('DISPLAY') is None:
-                    print("No X server available !")
-                    root.event_info()
-                else:
-                    root.dooneevent()
+                root.dooneevent()
             else:
                 root.mainloop()
 
             return True
         except Exception as e:
-            print('Exception occured: \n')
-            print(e)
+            print(f"Exception occured: {e}")
             return False
