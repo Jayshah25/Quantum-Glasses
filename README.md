@@ -1,6 +1,8 @@
 # Quantum-Glasses
 
-Points to remember while recreating
+### This Project is a member of [IBM Qiskit Ecosystem](https://qiskit.org/ecosystem)
+
+### Points to remember while recreating
 
 1. Install tkinter and qiskit in a virtual environment
 2. Paste the files from github (or clone) into the environment
@@ -21,7 +23,7 @@ To launch unittests just run :
 tox -epy39
 ```
 
-How the Visualizer looks?
+### How the Visualizer looks?
 
 
 ![image](https://user-images.githubusercontent.com/47387734/127348008-106532d8-e050-4a6d-9dfc-e349e1f6cc6c.png)
