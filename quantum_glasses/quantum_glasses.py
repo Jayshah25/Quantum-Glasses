@@ -53,7 +53,7 @@ class QuantumGlasses:
         info = tkinter.Tk()
         info.title('About')
         info.geometry('650x470')
-        info.resizable(0,0)
+        # info.resizable(0,0)
 
         text = tkinter.Text(info, height = 20, width = 20)
 
